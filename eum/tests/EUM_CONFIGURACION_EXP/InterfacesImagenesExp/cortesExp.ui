@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dcorteCaja</class>
+ <widget class="QDialog" name="dcorteCaja">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>554</width>
+    <height>438</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>554</width>
+    <height>438</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Corte de Caja</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Ticket/vista/img/logotipo1.png</normaloff>../Ticket/vista/img/logotipo1.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="Spanish" country="Mexico"/>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>111</y>
+     <width>331</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Total de Dia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tarifa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Corte entre Fechas</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>166</y>
+     <width>201</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="locale">
+    <locale language="Spanish" country="Mexico"/>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2017</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2017</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>1817</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::MonthSection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>310</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Ticket/vista/img/logotipo1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>201</y>
+     <width>201</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2017</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2017</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>1817</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::MonthSection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Condensed</family>
+     <pointsize>16</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   border:1px solid rgb(165, 0, 0);
+   border-top: rgb(165, 0, 0);
+   background: rgb(165, 0, 0);
+   padding: 9px 18px;
+   border-radius: 9px;
+   color: white;
+   font-size: 16px;
+	font: 75 16pt &quot;Roboto Condensed&quot;;
+   /*text-decoration: none;*/
+   vertical-align: middle;
+
+}
+  
+QPushButton:hover {
+   border-top-color: rgb(235, 0, 3);
+	background:rgb(235, 0, 3);
+   }</string>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>151</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Slab</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">bg-color: white;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fecha Incio&lt;/p&gt;&lt;p&gt;Fecha Fin&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Número Terminal&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Return To Sender</family>
+     <pointsize>32</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Corte de Caja</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>385</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Condensed</family>
+     <pointsize>16</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:1px solid #5b8a3c;
+   border-top: 1px solid #5b8a3c;
+   background: #5b8a3c;
+   padding: 9px 18px;
+   border-radius: 9px;
+   color: white;
+	font: 75 16pt &quot;Roboto Condensed&quot;;
+   /*text-decoration: none;*/
+   vertical-align: middle;
+
+}
+  
+QPushButton:hover {
+   border-top-color:rgb(77, 207, 57);
+	background: rgb(77, 207, 57);
+   }</string>
+   </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_NumeroTer">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>240</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

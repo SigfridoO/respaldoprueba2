@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html class="v2" dir="ltr"><head>
+<link type="text/css" rel="stylesheet" href="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/2258130529-css_bundle_v2.css">
+<meta content="width=1100" name="viewport">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="blogger" name="generator">
+<link href="http://lslutnfra.blogspot.mx/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://lslutnfra.blogspot.com/2013/03/ejecutar-comandos-del-sistema-con-python.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="Laboratorio de Software Libre UTN FRA - Atom" href="http://lslutnfra.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Laboratorio de Software Libre UTN FRA - RSS" href="http://lslutnfra.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Laboratorio de Software Libre UTN FRA - Atom" href="https://www.blogger.com/feeds/8618809592479227049/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="Laboratorio de Software Libre UTN FRA - Atom" href="http://lslutnfra.blogspot.com/feeds/2542424757787952373/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/3832463125-ieretrofit.js"></script>
+<![endif]-->
+<link href="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/python.png" rel="image_src">
+<meta content="http://lslutnfra.blogspot.com/2013/03/ejecutar-comandos-del-sistema-con-python.html" property="og:url">
+<meta content="Ejecutar comandos del sistema con Python" property="og:title">
+<meta content="Blog Laboratorio de Software Libre UTN FRA" property="og:description">
+<meta content="http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/w1200-h630-p-k-no-nu/python.png" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Laboratorio de Software Libre UTN FRA: Ejecutar comandos del sistema con Python</title>
+<link href="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/css.css" rel="stylesheet" type="text/css"><style id="page-skin-1" type="text/css"><!--
+/*-----------------------------------------------
+Blogger Template Style
+Name:     Picture Window
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 14px Verdana, Geneva, sans-serif;
+color: #000000;
+background: #474747 url(http://4.bp.blogspot.com/-baRpiqnzFLM/U8qJgvwxk2I/AAAAAAAAARw/N8WFxgfoUl0/s0/image_bk1.jpg) repeat fixed top left;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+.content-outer {
+font-size: 90%;
+}
+a:link {
+text-decoration:none;
+color: #ff9900;
+}
+a:visited {
+text-decoration:none;
+color: #ff9900;
+}
+a:hover {
+text-decoration:underline;
+color: #474747;
+}
+.content-outer {
+background: transparent url(//www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+-goog-ms-border-radius: 15px;
+border-radius: 15px;
+-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+margin: 30px auto;
+}
+.content-inner {
+padding: 15px;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: #000000 url(//www.blogblog.com/1kt/transparent/header_gradient_shade.png) repeat-x scroll top left;
+_background-image: none;
+color: #ffffff;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-goog-ms-border-radius: 10px;
+border-radius: 10px;
+}
+.Header img, .Header #header-inner {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-goog-ms-border-radius: 10px;
+border-radius: 10px;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 30px;
+padding-right: 30px;
+}
+.Header h1 {
+font: normal normal 36px Droid Sans;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 130%;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+margin: .5em 0 0;
+padding: 0;
+}
+.tabs-inner .section {
+margin: 0;
+}
+.tabs-inner .widget ul {
+padding: 0;
+background: #d8d8d8 url(//www.blogblog.com/1kt/transparent/tabs_gradient_shade.png) repeat scroll bottom;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-goog-ms-border-radius: 10px;
+border-radius: 10px;
+}
+.tabs-inner .widget li {
+border: none;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .5em 1em;
+margin-right: 0;
+color: #000000;
+font: normal normal 15px Droid Sans;
+-moz-border-radius: 0 0 0 0;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-goog-ms-border-radius: 0 0 0 0;
+border-radius: 0 0 0 0;
+background: transparent none no-repeat scroll top left;
+border-right: 1px solid #c6c6c6;
+}
+.tabs-inner .widget li:first-child a {
+padding-left: 1.25em;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-goog-ms-border-top-left-radius: 10px;
+-goog-ms-border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+position: relative;
+z-index: 1;
+background: #d8d8d8 url(//www.blogblog.com/1kt/transparent/tabs_gradient_shade.png) repeat scroll bottom;
+color: #ffffff;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal bold 100% Droid Sans;
+text-transform: uppercase;
+color: #000000;
+margin: .5em 0;
+}
+/* Main
+----------------------------------------------- */
+.main-outer {
+background: transparent none repeat scroll top center;
+-moz-border-radius: 0 0 0 0;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+-goog-ms-border-radius: 0 0 0 0;
+border-radius: 0 0 0 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+}
+.main-inner {
+padding: 15px 5px 20px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-left-inner {
+padding-left: 0;
+}
+.main-inner .column-right-inner {
+padding-right: 0;
+}
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+margin: 0;
+font: normal normal 24px Permanent Marker;
+}
+.comments h4 {
+margin: 1em 0 0;
+font: normal normal 24px Permanent Marker;
+}
+.date-header span {
+color: #000000;
+}
+.post-outer {
+background-color: #ffffff;
+border: solid 1px #d8d8d8;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+-goog-ms-border-radius: 10px;
+padding: 15px 20px;
+margin: 0 -20px 20px;
+}
+.post-body {
+line-height: 1.4;
+font-size: 110%;
+position: relative;
+}
+.post-header {
+margin: 0 0 1.5em;
+color: #474747;
+line-height: 1.6;
+}
+.post-footer {
+margin: .5em 0 0;
+color: #474747;
+line-height: 1.6;
+}
+#blog-pager {
+font-size: 140%
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #474747;
+border-bottom: 1px solid #474747;
+}
+.comments .continue {
+border-top: 2px solid #474747;
+}
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+padding: 0;
+list-style: none;
+}
+.widget ul li, .widget #ArchiveList ul.flat li {
+border-top: dashed 1px #ccc;
+border-top: dashed 1px rgba(128, 128, 128, .5);
+}
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.widget .post-body ul {
+list-style: disc;
+}
+.widget .post-body ul li {
+border: none;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+color:#ffffff;
+background: transparent url(https://resources.blogblog.com/blogblog/data/1kt/transparent/black50.png) repeat scroll top left;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-goog-ms-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+}
+.footer-inner {
+padding: 10px 5px 20px;
+}
+.footer-outer a {
+color: #ffffff;
+}
+.footer-outer a:visited {
+color: #ffffff;
+}
+.footer-outer a:hover {
+color: #000000;
+}
+.footer-outer .widget h2 {
+color: #000000;
+}
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+height: auto;
+}
+html body.mobile {
+min-height: 480px;
+background-size: 100% auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+border-bottom: none;
+background: transparent none repeat scroll top center;
+margin-bottom: 10px;
+}
+.mobile .date-outer {
+background: transparent none repeat scroll top center;
+}
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+}
+.mobile .content-outer,
+.mobile .main-outer,
+.mobile .post-outer {
+background: inherit;
+border: none;
+}
+.mobile .content-outer {
+font-size: 100%;
+}
+.mobile-link-button {
+background-color: #ff9900;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile-index-contents {
+color: #000000;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: #d8d8d8 url(//www.blogblog.com/1kt/transparent/tabs_gradient_shade.png) repeat scroll bottom;
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #c6c6c6;
+}
+.content-outer {
+background-color: whitesmoke;
+}
+#b-navbar {
+visibility: hidden;
+}
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 230px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 230px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("230px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 230px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 230px;
+margin-right: -230px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<style>
+    body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/s0\/image_bk1.jpg);}
+    
+@media (max-width: 200px) { body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/w200\/image_bk1.jpg);}}
+@media (max-width: 400px) and (min-width: 201px) { body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/w400\/image_bk1.jpg);}}
+@media (max-width: 800px) and (min-width: 401px) { body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/w800\/image_bk1.jpg);}}
+@media (max-width: 1200px) and (min-width: 801px) { body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/w1200\/image_bk1.jpg);}}
+/* Last tag covers anything over one higher than the previous max-size cap. */
+@media (min-width: 1201px) { body {background-image:url(http\:\/\/4.bp.blogspot.com\/-baRpiqnzFLM\/U8qJgvwxk2I\/AAAAAAAAARw\/N8WFxgfoUl0\/w1600\/image_bk1.jpg);}}
+  </style>
+<link href="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/authorization.css" media="all" onload="if(media!='all')media='all'" rel="stylesheet"><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8618809592479227049&amp;zx=39fb3c89-9dcc-47c8-ae85-c580d72061b2' rel='stylesheet'/></noscript>
+</head>
+<body class=" variant-shade">
+<div class="navbar no-items section" id="navbar" name="Barra de navegación">
+</div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header" name="Cabecera"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner" style="background-image: url(&quot;http://3.bp.blogspot.com/-b2qmKgyeTUc/U8rAkO5q0VI/AAAAAAAAASo/ypvBJ4Y82Nw/s1600/banner_blog_3.png&quot;); background-position: left; width: 939px; min-height: 116px; _height: 116px; background-repeat: no-repeat; ">
+<div class="titlewrapper" style="background: transparent">
+<h1 class="title" style="background: transparent; border-width: 0px">
+<a href="http://lslutnfra.blogspot.mx/">
+Laboratorio de Software Libre UTN FRA
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol" name="Multicolumnas"><div class="widget LinkList" data-version="1" id="LinkList1">
+<h2>Links</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://www.lslutnfra.com/">Página Oficial</a></li>
+<li><a href="http://www.facebook.com/pages/Laboratorio-de-Software-Libre-UTN-FRA/298840183551728">Página en Facebook</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=LinkList&amp;widgetId=LinkList1&amp;action=editWidget&amp;sectionId=crosscol" onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target="configLinkList1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+<div class="tabs section" id="crosscol-overflow" name="Cross-Column 2"><div class="widget Image" data-version="1" id="Image1">
+<h2>Cursos UTN-FRA</h2>
+<div class="widget-content">
+<a href="http://www.lslutnfra.com/">
+<img alt="Cursos UTN-FRA" id="Image1_img" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/banner2014-largo.png" style="visibility: visible;" width="930" height="71">
+</a>
+<br>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=Image&amp;widgetId=Image1&amp;action=editWidget&amp;sectionId=crosscol-overflow" onclick='return _WidgetManager._PopupConfig(document.getElementById("Image1"));' target="configImage1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main" name="Principal"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>miércoles, 6 de marzo de 2013</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/s1600/python.png" itemprop="image_url">
+<meta content="8618809592479227049" itemprop="blogId">
+<meta content="2542424757787952373" itemprop="postId">
+<a name="2542424757787952373"></a>
+<h3 class="post-title entry-title" itemprop="name">
+Ejecutar comandos del sistema con Python
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-2542424757787952373" itemprop="description articleBody">
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/s1600/python.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/python.png" width="200" height="200" border="0"></a></div>
+<br>
+Para poder ejecutar comandos externos existe una gran variedad de 
+opciones, en este post mostraremos las que consideramos más simples. 
+Ésta requiere de que importemos una funcionalidad que no se encuentra 
+disponible por defecto, es el módulo “<b>commands</b>”, el cuál cuenta con un gran número de métodos, en particular utilizaremos el denominado “<b>getoutput</b>”. <br>
+<br>
+<pre class="brush: python">import commands
+resultado = commands.getoutput("ls /var")
+print resultado
+</pre>
+<br>
+<b>Salida del print:</b><br>
+<i>backups  cache  games  lib  local  lock  log  mail  opt  run  spool  state  tmp  vztmp  www
+</i><br>
+<br>
+<div>
+Como se puede ver, solo debemos pasar como parámetro el comando que 
+pretendemos ejecutar entre comillas para poder recibir como retorno de 
+la función el texto que hubiera sido impreso por pantalla.</div>
+<div>
+<br></div>
+<div>
+Otra forma de realizar esta tarea es utilizando "os":</div>
+<pre class="brush: python">import os
+resultado = os.popen('ls').read()
+print resultado
+</pre>
+<br>
+<b>Salida del print:</b><br>
+<i>backups  cache  games  lib  local  lock  log  mail  opt  run  spool  state  tmp  vztmp  www
+</i><br>
+<div>
+<br></div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Publicado por
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<span itemprop="name">Unknown</span>
+</span>
+</span>
+<span class="post-timestamp">
+en
+<meta content="http://lslutnfra.blogspot.com/2013/03/ejecutar-comandos-del-sistema-con-python.html" itemprop="url">
+<a class="timestamp-link" href="http://lslutnfra.blogspot.mx/2013/03/ejecutar-comandos-del-sistema-con-python.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2013-03-06T16:56:00-08:00">16:56</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-791861384">
+<a href="https://www.blogger.com/post-edit.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;from=pencil" title="Editar entrada">
+<img alt="" class="icon-action" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;target=email" target="_blank" title="Enviar por correo electrónico"><span class="share-button-link-text">Enviar por correo electrónico</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;target=blog" onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target="_blank" title="Escribe un blog"><span class="share-button-link-text">Escribe un blog</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;target=twitter" target="_blank" title="Compartir con Twitter"><span class="share-button-link-text">Compartir con Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;target=facebook" onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target="_blank" title="Compartir con Facebook"><span class="share-button-link-text">Compartir con Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="https://www.blogger.com/share-post.g?blogID=8618809592479227049&amp;postID=2542424757787952373&amp;target=pinterest" target="_blank" title="Compartir en Pinterest"><span class="share-button-link-text">Compartir en Pinterest</span></a><div class="goog-inline-block google-plus-share-container"><div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;" id="___plusone_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1501126207638" name="I0_1501126207638" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/fastbutton.html" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe></div></div>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+Etiquetas:
+<a href="http://lslutnfra.blogspot.mx/search/label/Python" rel="tag">Python</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://lslutnfra.blogspot.mx/2013/03/compilar-y-empaquetar-un-kernel-linux.html" id="Blog1_blog-pager-newer-link" title="Entrada más reciente">Entrada más reciente</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://lslutnfra.blogspot.mx/2013/03/configurar-eclipse-para-python.html" id="Blog1_blog-pager-older-link" title="Entrada antigua">Entrada antigua</a>
+</span>
+<a class="home-link" href="http://lslutnfra.blogspot.mx/">Página principal</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+</div>
+<script src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/cbgapi.loaded_1" async=""></script><script src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/cbgapi.loaded_0" async=""></script><script type="text/javascript">
+    window.___gcfg = { 'lang': 'es' };
+  </script>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div class="sidebar section" id="sidebar-right-1"><div class="widget BlogSearch" data-version="1" id="BlogSearch1">
+<h2 class="title">Buscar en este blog</h2>
+<div class="widget-content">
+<div id="BlogSearch1_form">
+<form action="http://lslutnfra.blogspot.mx/search" class="gsc-search-box" target="_top">
+<table class="gsc-search-box" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="gsc-input">
+<input autocomplete="off" class="gsc-input" name="q" size="10" title="search" type="text">
+</td>
+<td class="gsc-search-button">
+<input class="gsc-search-button" title="search" value="Buscar" type="submit">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=BlogSearch&amp;widgetId=BlogSearch1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogSearch1"));' target="configBlogSearch1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Label" data-version="1" id="Label1">
+<h2>Temas</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Android">Android</a>
+<span dir="ltr">(8)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Beaglebone%20Black">Beaglebone Black</a>
+<span dir="ltr">(6)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Curso%20Android%20no%20Programadores">Curso Android no Programadores</a>
+<span dir="ltr">(9)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Debian">Debian</a>
+<span dir="ltr">(12)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Fedora">Fedora</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Joomla">Joomla</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Otros">Otros</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Python">Python</a>
+<span dir="ltr">(8)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/Raspberry%20Pi">Raspberry Pi</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://lslutnfra.blogspot.mx/search/label/seminarios">seminarios</a>
+<span dir="ltr">(5)</span>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=Label&amp;widgetId=Label1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target="configLabel1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Subscribe" data-version="1" id="Subscribe1">
+<div style="white-space:nowrap">
+<h2 class="title">Suscribirse!</h2>
+<div class="widget-content">
+<div class="subscribe-wrapper subscribe-type-POST">
+<div class="subscribe expanded subscribe-type-POST" id="SW_READER_LIST_Subscribe1POST" style="display:none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class="subscribe-dropdown-arrow" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" border="0" align="absmiddle">
+Entradas
+</span>
+<div class="feed-reader-links">
+<a class="feed-reader-link" href="https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Flslutnfra.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="https://add.my.yahoo.com/content?url=http%3A%2F%2Flslutnfra.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://lslutnfra.blogspot.com/feeds/posts/default" target="_blank">
+<img class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" align="absmiddle">
+                  Atom
+                </a>
+</div>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1POST" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img alt="" class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" border="0" align="absmiddle">
+Entradas
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div class="subscribe-wrapper subscribe-type-PER_POST">
+<div class="subscribe expanded subscribe-type-PER_POST" id="SW_READER_LIST_Subscribe1PER_POST" style="display:none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img class="subscribe-dropdown-arrow" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" border="0" align="absmiddle">
+Comentarios
+</span>
+<div class="feed-reader-links">
+<a class="feed-reader-link" href="https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Flslutnfra.blogspot.com%2Ffeeds%2F2542424757787952373%2Fcomments%2Fdefault" target="_blank">
+<img src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="https://add.my.yahoo.com/content?url=http%3A%2F%2Flslutnfra.blogspot.com%2Ffeeds%2F2542424757787952373%2Fcomments%2Fdefault" target="_blank">
+<img src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://lslutnfra.blogspot.com/feeds/2542424757787952373/comments/default" target="_blank">
+<img class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" align="absmiddle">
+                  Atom
+                </a>
+</div>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1PER_POST" onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img alt="" class="feed-icon" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon_feed12.png" border="0" align="absmiddle">
+Comentarios
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=Subscribe&amp;widgetId=Subscribe1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target="configSubscribe1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget LinkList" data-version="1" id="LinkList2">
+<h2>Páginas</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://www.facebook.com/pages/Laboratorio-de-Software-Libre-UTN-FRA/298840183551728">LSL (Facebook)</a></li>
+<li><a href="http://www.lslutnfra.com/">LSL (Página)</a></li>
+<li><a href="http://www.fra.utn.edu.ar/">UTN-FRA</a></li>
+<li><a href="https://groups.google.com/forum/?hl=es-419#%21forum/lslutnfra">Grupo Google</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=LinkList&amp;widgetId=LinkList2&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList2"));' target="configLinkList2" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Gadget" data-version="1" id="Gadget1">
+Se ha producido un error en este gadget.
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=Gadget&amp;widgetId=Gadget1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick='return _WidgetManager._PopupConfig(document.getElementById("Gadget1"));' target="configGadget1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<table class="section-columns columns-2" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="sidebar no-items section" id="sidebar-right-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="sidebar no-items section" id="sidebar-right-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar section" id="sidebar-right-3"><div class="widget PlusOne" data-version="1" id="PlusOne1">
+<div class="widget-content">
+<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;" id="___plusone_1"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I1_1501126207651" name="I1_1501126207651" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/fastbutton_002.html" data-gapiattached="true" title="G+" width="100%" frameborder="0"></iframe></div>
+<script type="text/javascript">
+      window.___gcfg = {"lang": "es"};
+    </script>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot no-items section" id="footer-1"></div>
+<table class="section-columns columns-2" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot no-items section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot no-items section" id="footer-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3" name="Pie de página"><div class="widget Attribution" data-version="1" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Tema Picture Window. Con la tecnología de <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8618809592479227049&amp;widgetType=Attribution&amp;widgetId=Attribution1&amp;action=editWidget&amp;sectionId=footer-3" onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target="configAttribution1" title="Editar">
+<img alt="" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/plusone.js" type="text/javascript" gapi_processed="true"></script>
+
+<script type="text/javascript" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/3863139539-widgets.js"></script>
+<script type="text/javascript">
+window['__wavt'] = 
+'AOuZoY58S_VFc0bv1xFCxw4JzJ3zAxPSWA:1501126206583';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8618809592479227049','//lslutnfra.blogspot.mx/2013/03/ejecutar-comandos-del-sistema-con-python.html','8618809592479227049');
+_WidgetManager._SetDataContext([{'name':
+ 'blog', 'data': {'blogId': '8618809592479227049', 'title': 'Laboratorio
+ de Software Libre UTN FRA', 'url': 
+'http://lslutnfra.blogspot.mx/2013/03/ejecutar-comandos-del-sistema-con-python.html',
+ 'canonicalUrl': 
+'http://lslutnfra.blogspot.com/2013/03/ejecutar-comandos-del-sistema-con-python.html',
+ 'homepageUrl': 'http://lslutnfra.blogspot.mx/', 'searchUrl': 
+'http://lslutnfra.blogspot.mx/search', 'canonicalHomepageUrl': 
+'http://lslutnfra.blogspot.com/', 'blogspotFaviconUrl': 
+'http://lslutnfra.blogspot.mx/favicon.ico', 'bloggerUrl': 
+'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': 
+true, 'enabledCommentProfileImages': true, 'gPlusViewType': 
+'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '',
+ 'encoding': 'UTF-8', 'locale': 'es', 'localeUnderscoreDelimited': 'es',
+ 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 
+'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 
+'feedLinks': '\x3clink rel\x3d\x22alternate\x22 
+type\x3d\x22application/atom+xml\x22 title\x3d\x22Laboratorio de 
+Software Libre UTN FRA - Atom\x22 
+href\x3d\x22http://lslutnfra.blogspot.com/feeds/posts/default\x22 
+/\x3e\n\x3clink rel\x3d\x22alternate\x22 
+type\x3d\x22application/rss+xml\x22 title\x3d\x22Laboratorio de Software
+ Libre UTN FRA - RSS\x22 
+href\x3d\x22http://lslutnfra.blogspot.com/feeds/posts/default?alt\x3drss\x22
+ /\x3e\n\x3clink rel\x3d\x22service.post\x22 
+type\x3d\x22application/atom+xml\x22 title\x3d\x22Laboratorio de 
+Software Libre UTN FRA - Atom\x22 
+href\x3d\x22https://www.blogger.com/feeds/8618809592479227049/posts/default\x22
+ /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 
+type\x3d\x22application/atom+xml\x22 title\x3d\x22Laboratorio de 
+Software Libre UTN FRA - Atom\x22 
+href\x3d\x22http://lslutnfra.blogspot.com/feeds/2542424757787952373/comments/default\x22
+ /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'adsenseHostId': 
+'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 
+'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript 
+type\x3d\x22text/javascript\x22 
+src\x3d\x22https://www.blogger.com/static/v1/jsbin/3832463125-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e',
+ 'view': '', 'dynamicViewsCommentsSrc': 
+'//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 
+'dynamicViewsScriptSrc': 
+'//www.blogblog.com/dynamicviews/61f0d0c002a4f363', 'plusOneApiSrc': 
+'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': 
+[{'name': 'Obtener enlace', 'key': 'link', 'shareMessage': 'Obtener 
+enlace', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 
+'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name':
+ 'Escribe un blog', 'key': 'blogThis', 'shareMessage': 'Escribe un 
+blog', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 
+'shareMessage': 'Compartir en Twitter', 'target': 'twitter'}, {'name': 
+'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en 
+Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 
+'googlePlus', 'shareMessage': 'Compartir en Google+', 'target': 
+'googleplus'}, {'name': 'Correo electrónico', 'key': 'email', 
+'shareMessage': 'Correo electrónico', 'target': 'email'}], 
+'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript 
+type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: 
+\x27es\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 
+'jumpLinkMessage': 'Más información', 'pageType': 'item', 'postId': 
+'2542424757787952373', 'postImageThumbnailUrl': 
+'http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/s72-c/python.png',
+ 'postImageUrl': 
+'http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/s1600/python.png',
+ 'pageName': 'Ejecutar comandos del sistema con Python', 'pageTitle': 
+'Laboratorio de Software Libre UTN FRA: Ejecutar comandos del sistema 
+con Python', 'metaDescription': ''}}, {'name': 'features', 'data': 
+{'unsupported_browser_message': 'false', 'lightbox_img_parsing': 
+'false', 'sharing_get_link_dialog': 'false'}}, {'name': 'messages', 
+'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'El enlace se ha 
+copiado en el Portapapeles.', 'ok': 'Aceptar', 'postLink': 'Enlace de la
+ entrada'}}, {'name': 'template', 'data': {'name': 'Picture Window', 
+'localizedName': 'Picture Window', 'isResponsive': false, 
+'isAlternateRendering': false, 'isCustom': false, 'variant': 'shade', 
+'variantId': 'shade', 'variantName': 'Shade', 'localizedVariantName': 
+'Shade'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 
+'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': 
+'?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': 
+'?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': 
+'?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': 
+'?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': 
+'?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': 
+'?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Ejecutar comandos 
+del sistema con Python', 'description': 'Blog Laboratorio de Software 
+Libre UTN FRA', 'featuredImage': 
+'http://2.bp.blogspot.com/-UjXIqCQ2qR0/UTfGhN-GolI/AAAAAAAAAHE/jGzn4AR8inI/s1600/python.png',
+ 'url': 
+'http://lslutnfra.blogspot.mx/2013/03/ejecutar-comandos-del-sistema-con-python.html',
+ 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 
+'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 
+'isArchive': false, 'isLabelSearch': false, 'postId': 
+2542424757787952373}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1',
+ 'header', null, document.getElementById('Header1'), {}, 
+'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new 
+_WidgetInfo('LinkList1', 'crosscol', null, 
+document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 
+'crosscol-overflow', null, document.getElementById('Image1'), {'resize':
+ true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 
+'main', null, document.getElementById('Blog1'), 
+{'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 
+'lightboxModuleUrl': 
+'https://www.blogger.com/static/v1/jsbin/3509612225-lbx__es.js', 
+'lightboxCssUrl': 
+'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'},
+ 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new 
+_WidgetInfo('BlogSearch1', 'sidebar-right-1', null, 
+document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 
+'sidebar-right-1', null, document.getElementById('Label1'), {}, 
+'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new 
+_WidgetInfo('Subscribe1', 'sidebar-right-1', null, 
+document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new 
+_WidgetInfo('LinkList2', 'sidebar-right-1', null, 
+document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_GadgetView', new _WidgetInfo('Gadget1',
+ 'sidebar-right-1', null, document.getElementById('Gadget1'), {}, 
+'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusOneView', new 
+_WidgetInfo('PlusOne1', 'sidebar-right-3', null, 
+document.getElementById('PlusOne1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new 
+_WidgetInfo('Attribution1', 'footer-3', null, 
+document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+
+<iframe name="oauth2relay903627217" id="oauth2relay903627217" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/postmessageRelay.html" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe><link type="text/css" rel="stylesheet" href="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/368954415-lightbox_bundle.css"><script type="text/javascript" src="Laboratorio%20de%20Software%20Libre%20UTN%20FRA:%20Ejecutar%20comandos%20del%20sistema%20con%20Python%20Archivos/3509612225-lbx__es.js"></script></body></html>

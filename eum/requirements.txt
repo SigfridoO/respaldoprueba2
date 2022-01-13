@@ -1,0 +1,7 @@
+# Add your requirements here like:
+# numpy
+# scipy>=0.9
+
+#Ejecutar script de creacion y configuracion de la BD
+ psql -U postgres -f build.sql 
+

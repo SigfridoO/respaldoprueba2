@@ -1,0 +1,1 @@
+/**/__twttr.setFollowersCountAndFollowing([{"following":false,"id":"291001777","screen_name":"lwp_","name":"LaWebDelProgramador","protected":false,"followers_count":21253,"formatted_followers_count":"21,3\u00A0K seguidores","age_gated":false}]);

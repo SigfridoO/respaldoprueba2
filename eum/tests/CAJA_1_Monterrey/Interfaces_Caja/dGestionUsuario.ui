@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dGestionUsuario</class>
+ <widget class="QDialog" name="dGestionUsuario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1366</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1366</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion de Usuarios</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Documents/Ticket/Ticket/vista/img/logotipo1.png</normaloff>../../Documents/Ticket/Ticket/vista/img/logotipo1.png</iconset>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>961</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="tabRegistrar">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Permite dar de alta usuarios en el sistema.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>Registrar Usuario</string>
+    </attribute>
+    <widget class="QLineEdit" name="txtApp">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>98</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxHorario">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>364</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>7:00 am - 15:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14:00 pm - 22:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22:00 pm - 7:00 am</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cbxRol">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>318</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="currentText" stdset="0">
+      <string>Cajero</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cajero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Administrador</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txtUsuario">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>186</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtNombre">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>54</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtApm">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>143</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>53</y>
+       <width>161</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Nombre&lt;/p&gt;&lt;p&gt;Apellido Paterno&lt;/p&gt;&lt;p&gt;Apellido Materno&lt;/p&gt;&lt;p&gt;Usuario&lt;/p&gt;&lt;p&gt;Password&lt;/p&gt;&lt;p&gt;Puesto&lt;/p&gt;&lt;p&gt;Rol&lt;/p&gt;&lt;p&gt;Horario&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPuesto">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>275</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPassword">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>231</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <zorder>cbxHorario</zorder>
+    <zorder>txtApp</zorder>
+    <zorder>cbxRol</zorder>
+    <zorder>txtNombre</zorder>
+    <zorder>txtApm</zorder>
+    <zorder>txtPuesto</zorder>
+    <zorder>txtUsuario</zorder>
+    <zorder>txtPassword</zorder>
+    <zorder>label_2</zorder>
+   </widget>
+   <widget class="QWidget" name="tabConsultar">
+    <attribute name="title">
+     <string>Consultar Usuario</string>
+    </attribute>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>52</y>
+       <width>161</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Usuario&lt;/p&gt;&lt;p&gt;Nombre&lt;/p&gt;&lt;p&gt;Apellido Paterno&lt;/p&gt;&lt;p&gt;Apellido Materno&lt;/p&gt;&lt;p&gt;Puesto&lt;/p&gt;&lt;p&gt;Rol&lt;/p&gt;&lt;p&gt;Horario&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCPuesto">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>231</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCApm">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>186</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCApp">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>143</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCUsuario">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>54</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxCRol">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>275</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="currentText" stdset="0">
+      <string>Cajero</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cajero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Administrador</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txtCNombre">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>98</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxCHorario">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>320</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>7:00 am - 15:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14:00 pm - 22:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22:00 pm - 7:00 am</string>
+      </property>
+     </item>
+    </widget>
+    <zorder>cbxCRol</zorder>
+    <zorder>cbxCHorario</zorder>
+    <zorder>label_5</zorder>
+    <zorder>txtCPuesto</zorder>
+    <zorder>txtCApm</zorder>
+    <zorder>txtCApp</zorder>
+    <zorder>txtCUsuario</zorder>
+    <zorder>txtCNombre</zorder>
+   </widget>
+   <widget class="QWidget" name="tabModificar">
+    <attribute name="title">
+     <string>Modificar Usuario</string>
+    </attribute>
+    <widget class="QLineEdit" name="txtMApp">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>142</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtMUsuario">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>53</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxMRol">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>317</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="currentText" stdset="0">
+      <string>Cajero</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cajero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Administrador</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cbxMHorario">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>363</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>7:00 am - 15:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14:00 pm - 22:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22:00 pm - 7:00 am</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txtMNombre">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>97</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtMPassword">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>230</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtMApm">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>185</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>52</y>
+       <width>161</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Usuario&lt;/p&gt;&lt;p&gt;Nombre&lt;/p&gt;&lt;p&gt;Apellido Paterno&lt;/p&gt;&lt;p&gt;Apellido Materno&lt;/p&gt;&lt;p&gt;Password&lt;/p&gt;&lt;p&gt;Puesto&lt;/p&gt;&lt;p&gt;Rol&lt;/p&gt;&lt;p&gt;Horario&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtMPuesto">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>274</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <zorder>txtCApp_2</zorder>
+    <zorder>cbxRol_4</zorder>
+    <zorder>txtCApm_2</zorder>
+    <zorder>txtCNombre_2</zorder>
+    <zorder>label_7</zorder>
+    <zorder>txtPassword_4</zorder>
+    <zorder>txtCUsuario_2</zorder>
+    <zorder>txtPuesto_4</zorder>
+    <zorder>cbxHorario_4</zorder>
+    <zorder>txtMApp</zorder>
+    <zorder>txtMUsuario</zorder>
+    <zorder>cbxMRol</zorder>
+    <zorder>cbxMHorario</zorder>
+    <zorder>txtMNombre</zorder>
+    <zorder>txtMPassword</zorder>
+    <zorder>txtMApm</zorder>
+    <zorder>label_7</zorder>
+    <zorder>txtMPuesto</zorder>
+   </widget>
+   <widget class="QWidget" name="tabEliminar">
+    <attribute name="title">
+     <string>Eliminar Usuario</string>
+    </attribute>
+    <widget class="QLineEdit" name="txtEPuesto">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>231</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxERol">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>275</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="currentText" stdset="0">
+      <string>Cajero</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cajero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Administrador</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>52</y>
+       <width>161</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Usuario&lt;/p&gt;&lt;p&gt;Nombre&lt;/p&gt;&lt;p&gt;Apellido Paterno&lt;/p&gt;&lt;p&gt;Apellido Materno&lt;/p&gt;&lt;p&gt;Puesto&lt;/p&gt;&lt;p&gt;Rol&lt;/p&gt;&lt;p&gt;Horario&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtEUsuario">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>54</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtENombre">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>98</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtEApm">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>186</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbxEHorario">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>320</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <item>
+      <property name="text">
+       <string>7:00 am - 15:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>14:00 pm - 22:00 pm</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22:00 pm - 7:00 am</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="txtEApp">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>143</y>
+       <width>300</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto Condensed</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>533</x>
+     <y>30</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Return To Sender</family>
+     <pointsize>32</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Gestion de Usuarios</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>872</x>
+     <y>10</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/logotipo1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>187</x>
+     <y>641</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Condensed</family>
+     <pointsize>16</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   border:1px solid rgb(165, 0, 0);
+   border-top: rgb(165, 0, 0);
+   background: rgb(165, 0, 0);
+   padding: 9px 18px;
+   border-radius: 9px;
+   color: white;
+   font-size: 16px;
+	font: 75 16pt &quot;Roboto Condensed&quot;;
+   /*text-decoration: none;*/
+   vertical-align: middle;
+
+}
+  
+QPushButton:hover {
+   border-top-color: rgb(235, 0, 3);
+	background:rgb(235, 0, 3);
+   }</string>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1039</x>
+     <y>642</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Condensed</family>
+     <pointsize>16</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:1px solid #5b8a3c;
+   border-top: 1px solid #5b8a3c;
+   background: #5b8a3c;
+   padding: 9px 18px;
+   border-radius: 9px;
+   color: white;
+	font: 75 16pt &quot;Roboto Condensed&quot;;
+   /*text-decoration: none;*/
+   vertical-align: middle;
+
+}
+  
+QPushButton:hover {
+   border-top-color:rgb(77, 207, 57);
+	background: rgb(77, 207, 57);
+   }</string>
+   </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>622</x>
+     <y>641</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Limpiar</string>
+   </property>
+  </widget>
+  <zorder>tabWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>label</zorder>
+  <zorder>label_6</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_6</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>txtNombre</tabstop>
+  <tabstop>txtApp</tabstop>
+  <tabstop>txtApm</tabstop>
+  <tabstop>txtUsuario</tabstop>
+  <tabstop>txtPassword</tabstop>
+  <tabstop>txtPuesto</tabstop>
+  <tabstop>cbxRol</tabstop>
+  <tabstop>cbxHorario</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>txtApp_2</tabstop>
+  <tabstop>cbxHorario_2</tabstop>
+  <tabstop>cbxRol_2</tabstop>
+  <tabstop>txtUsuario_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>txtNombre_2</tabstop>
+  <tabstop>txtApm_2</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>txtPuesto_2</tabstop>
+  <tabstop>txtPassword_2</tabstop>
+  <tabstop>txtApp_3</tabstop>
+  <tabstop>cbxHorario_3</tabstop>
+  <tabstop>cbxRol_3</tabstop>
+  <tabstop>txtUsuario_3</tabstop>
+  <tabstop>txtNombre_3</tabstop>
+  <tabstop>txtApm_3</tabstop>
+  <tabstop>txtPuesto_3</tabstop>
+  <tabstop>txtPassword_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
